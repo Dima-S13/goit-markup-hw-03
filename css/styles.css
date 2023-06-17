@@ -37,7 +37,12 @@ padding: 0 15px;}
     }
 
    .header-container 
-   {outline: 2px solid teal;}
+   {outline: 2px solid teal;
+  display: flex;
+width: 1158px;
+padding: 0 15px;
+justify-content: center;
+align-items: center;}
 
     .page-navigation
      {display: flex;
@@ -84,12 +89,12 @@ gap: 40px;}
 
     .page-address
     {font-style: normal;
-
+      margin-left: auto;
   }
 
     .address-list {display: flex; 
     gap: 40px; 
-  margin-left: auto;  }
+   }
     
   
     .header-contacts
