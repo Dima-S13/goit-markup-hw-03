@@ -95,8 +95,7 @@ gap: 40px;}
     .address-list {display: flex; 
     gap: 40px; 
    }
-    
-  
+      
     .header-contacts
     {   font-weight: 400;
         font-size: 16px;
@@ -157,8 +156,8 @@ font-weight: 500;
   .advantages-section {padding: 120px 156px;
  }
 
- .hidden-title 
- {}
+.visually-hidden
+ {overflow: hidden;}
 
         .advantages-list 
         {display: flex;
