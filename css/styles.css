@@ -81,7 +81,7 @@ gap: 40px;}
  .nav-link 
  { padding-top: 24px;
   padding-bottom: 24px;
-  
+  display: block;
   font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
