@@ -12,7 +12,8 @@ body
     color: var(--slate-contacts-color);
 font-style: normal;}
 
-a {text-decoration: none;}
+a {text-decoration: none;
+}
 ul, ol {
   list-style-type: none;
   margin: 0;
@@ -26,8 +27,8 @@ h6,
 p {margin: 0;}
 
 .container 
-{width: 1158px;
-outline: 2px solid teal;
+{  /* outline: 2px solid teal; */
+  width: 1158px;
 margin: 0 auto;
 padding: 0 15px;}
 
@@ -37,35 +38,37 @@ padding: 0 15px;}
     }
 
    .header-container 
-   {outline: 2px solid teal;
-  display: flex;
-width: 1158px;
-padding: 0 15px;
-justify-content: center;
-align-items: center;}
+ {
+  padding: 0 15px;
+display: flex;
+align-items: center;
+}
 
-    .page-navigation
+    .page-nav
      {display: flex;
     align-items: center;
   }
 
 .logo 
-{font-family: 'Raleway', sans-serif;
+{ margin-right: 76px;
+ margin-top: 16px;
+    
+  font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--iris-btn-background);
-    margin-right: 76px;}
+    color: var(--iris-btn-background);    }
 
     .logo-span
-    {font-family: 'Raleway', sans-serif;
+    {  font-family: 'Raleway', sans-serif;
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
       letter-spacing: 0.03em;
-        text-transform: uppercase;    
+        text-transform: uppercase;  
+
         color: var(--main-text-color);
       }
 
@@ -76,8 +79,10 @@ gap: 40px;}
 .nav-item {}
 
  .nav-link 
- {  font-weight: 500;
-  padding: 24px 0;
+ { padding-top: 24px;
+  padding-bottom: 24px;
+  
+  font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -153,11 +158,12 @@ font-weight: 500;
         border: 1px solid transparent;} 
 
         /* ========= ADVANTAGES ========= */
-  .advantages-section {padding: 120px 156px;
- }
+  .advantages-section 
+  {padding-top: 120px;
+  padding-bottom: 120px; }
 
 .visually-hidden
- {overflow: hidden;}
+ {display: none;}
 
         .advantages-list 
         {display: flex;
