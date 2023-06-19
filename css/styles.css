@@ -4,7 +4,8 @@
 --main-text-color: #2E2F42;
 --slate-contacts-color: #434455;
 --hover-ocean-color: #404BBF;
---cloud-suptitle-light: #F4F4FD;}
+--cloud-suptitle-light: #F4F4FD;
+--portfolio-button-shadow: #e7e9fc;}
 
 body 
 {font-family: "Roboto", sans-serif;
@@ -30,28 +31,27 @@ p {margin: 0;}
 {  /* outline: 2px solid teal; */
   width: 1158px;
 margin: 0 auto;
-padding: 0 15px;}
+padding: 0 15px;
+}
 
     /* ========= HEADER ========= */
    .page-header 
-   {border-bottom: 1px solid #e7e9fc; 
-    }
-
+   {border-bottom: 1px solid var(--portfolio-button-shadow); }
+   
    .header-container 
- {
+ {margin-top: 0;
   padding: 0 15px;
 display: flex;
 align-items: center;
 }
 
-    .page-nav
-     {display: flex;
-    align-items: center;
-  }
+.page-nav
+{display: flex;
+align-items: center;}
 
 .logo 
 { margin-right: 76px;
-margin-top: 16px;
+
     
   font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -323,19 +323,23 @@ margin-bottom: 72px;
       font-size: 16px;
       line-height: 1.5;
       letter-spacing: 0.04em;
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
           color: var(--iris-btn-background);
         background-color: var(--cloud-suptitle-light);
       cursor: pointer;
     padding: 12px 24px; 
-      border: 1px solid #e7e9fc;   }
+  border: none;
+        }
 
       .portfolio-btn:hover,
       .portfolio-btn:focus
       {background-color: var(--hover-ocean-color);
         color: var(--main-bg-color); 
-      border: 1px solid transparent;     }
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+         0px 2px 1px rgba(0, 0, 0, 0.08),
+         0px 2px 2px rgba(0, 0, 0, 0.12);
+       
+       }
 
 .portfolio-image-list
 {display: flex;
@@ -348,11 +352,11 @@ row-gap: 48px;}
 
 .port-text-container 
 {padding: 32px 16px;
-border: 1px solid #e7e9fc;
+border: 1px solid var(--portfolio-button-shadow);
 border-top: none;}
 
 .portfolio-image-item
-{border: 1px solid #E7E9FC;
+{border: 1px solid var(--portfolio-button-shadow);
   width: calc((100% - 48px) / 3);
 }
 
